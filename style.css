@@ -1,0 +1,125 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button,
+input[type="button"],
+input[type="submit"] {
+  all: unset;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+:root {
+  --font-main: "Inter", system-ui, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: var(--font-main);
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.6;
+  color: #0f172a;
+  background-color: #f8fafc;
+}
+
+header {
+  padding: 18px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-title {
+  font-style: italic;
+}
+
+.add-book-btn {
+  padding: 0.4rem 0.625rem;
+  border: 2px dashed #0f172a;
+  border-radius: 1rem;
+}
+
+.library-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem; /* = 16px */
+  padding: 2rem 1rem; /* spacing around the grid */
+  max-width: 1400px; /* center content */
+  margin-inline: auto;
+}
+
+.card {
+  position: relative;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; /* <— was center */
+  padding: 1rem; /* so content isn’t glued to the border */
+  gap: 0.75rem;
+  border: 1px solid #0f172a;
+  border-radius: 12px;
+}
+
+.status-bar {
+  display: flex;
+  justify-content: space-between;
+  align-self: stretch;
+  padding-inline: 0.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.status-bar button {
+  padding: 0.1rem 0.3rem;
+  font-size: 0.8rem;
+  font-weight: 400;
+  border-radius: 0.4rem;
+}
+
+.card-info {
+  text-align: center;
+}
+
+.card-title {
+  font-style: italic;
+}
+
+.card-author span {
+  font-size: small;
+  font-weight: 200;
+}
+
+.card-author {
+  font-weight: 400;
+  font-size: medium;
+}
+
+.card-pages {
+  position: absolute;
+  bottom: 0.75rem;
+  right: 1rem;
+  color: #475569;
+  font-size: 0.9rem;
+  margin-top: 1.25rem;
+}
+
+.btn-light-green {
+  background-color: #1db954;
+  color: #f8fafc;
+}
+
+.btn-light-red {
+  background-color: #db2645;
+  color: #f8fafc;
+}
