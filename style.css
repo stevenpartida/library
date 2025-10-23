@@ -115,11 +115,76 @@ header {
 }
 
 .btn-light-green {
-  background-color: #1db954;
-  color: #f8fafc;
+  background-color: #9fff9c;
+  color: #0f172a;
 }
 
 .btn-light-red {
-  background-color: #db2645;
+  background-color: #ff7070;
   color: #f8fafc;
+}
+
+dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  border-radius: 10px;
+  background: white;
+  padding: 3rem;
+  width: 40%;
+  height: fit-content;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: bolder;
+  font-size: xx-large;
+}
+
+form input {
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #0f172a;
+  border-radius: 0.8rem;
+  font-size: medium;
+}
+
+form label {
+  margin-bottom: 0.2rem;
+}
+
+.form-checkbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-checkbox label {
+  font-weight: bold;
+}
+
+.form-btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.form-btns button {
+  padding: 1rem;
+  width: 100%;
+  border-radius: 1rem;
 }
